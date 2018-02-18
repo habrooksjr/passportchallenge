@@ -4,53 +4,69 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Passport Challenge</title>
     <link href="https://cdn.jsdelivr.net/npm/gijgo@1.8.1/combined/css/gijgo.min.css" rel="stylesheet" type="text/css" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-    <link href="Content/default.css" rel="stylesheet" type="text/css" />
+    <link href="Content/default.css?version=16" rel="stylesheet" type="text/css" />
 </head>
 <body>
 
     <div class="container">
-
-        <form id="form1" runat="server" novalidate>
-
-            <div id="controlContainer">
-                <label for="txtForm_Node_numberOfNodes">
-                    <span>Factory Name</span>
-                    <input type="text" id="txtForm_Node_Name" required />
-                    <span id="nameErrorDisplay" class="errorDisplay" aria-live="polite"></span>
-                </label>&nbsp;&nbsp;
-                <label for="txtForm_Node_numberOfNodes">
-                    <span>Number Of Children</span>
-                    <input type="number" id="txtForm_Node_numberOfNodes" required min="1" max="15" />
-                    <span id="numberOfNodesErrorDisplay" class="errorDisplay" aria-live="polite"></span>
-                </label>&nbsp;&nbsp;
-                <label for="txtForm_Node_startRange">
-                    <span>Start Range</span>
-                    <input type="number" id="txtForm_Node_startRange" required min="1" />
-                    <span id="startRangeErrorDisplay" class="errorDisplay" aria-live="polite"></span>
-                </label>&nbsp;&nbsp;
-                <label for="txtForm_Node_endRange">
-                    <span>End Range</span>
-                    <input type="number" id="txtForm_Node_endRange" required min="1" />
-                    <span id="endRangeErrorDisplay" class="errorDisplay" aria-live="polite"></span>
-                </label>&nbsp;&nbsp;
-                <br />
-                <br />
-
-                <input type="button" id="btnForm_addFactory" class="gj-button-md" value="Add" style="height:35px; width:85px" />&nbsp;&nbsp;
-                <input type="button" id="btnForm_updateFactory" class="gj-button-md" value="Update" style="height:35px; width:85px" />&nbsp;&nbsp;
-                <input type="button" id="btnForm_deleteFactory" class="gj-button-md" value="Delete" style="height:35px; width:85px" />
+        <div class="row">
+            <div class="col">
+                <form id="form1" runat="server" novalidate>
+                    <div id="controlContainer">
+                        <div class="row">
+                            <div class="col-8 col-xs-8 col-md-3">
+                                <label for="txtForm_Node_numberOfNodes">
+                                    <span>Factory Name</span>
+                                    <input type="text" id="txtForm_Node_Name" required />
+                                    <span id="nameErrorDisplay" class="errorDisplay" aria-live="polite"></span>
+                                </label>
+                            </div>
+                            <div class="col-8 col-xs-8 col-md-3">
+                                <label for="txtForm_Node_numberOfNodes">
+                                    <span>Number Of Children</span>
+                                    <input type="number" id="txtForm_Node_numberOfNodes" required min="1" max="15" />
+                                    <span id="numberOfNodesErrorDisplay" class="errorDisplay" aria-live="polite"></span>
+                                </label>
+                            </div>
+                            <div class="col-8 col-xs-8 col-md-3">
+                                <label for="txtForm_Node_startRange">
+                                    <span>Start Range</span>
+                                    <input type="number" id="txtForm_Node_startRange" required min="1" />
+                                    <span id="startRangeErrorDisplay" class="errorDisplay" aria-live="polite"></span>
+                                </label>
+                            </div>               
+                            <div class="col-8 col-xs-8 col-md-3">
+                                <label for="txtForm_Node_endRange">
+                                    <span>End Range</span>
+                                    <input type="number" id="txtForm_Node_endRange" required min="1" />
+                                    <span id="endRangeErrorDisplay" class="errorDisplay" aria-live="polite"></span>
+                                </label>&nbsp;&nbsp;
+                             </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-xs-12 col-md-2">
+                                <input type="button" id="btnForm_addFactory" class="gj-button-md" value="Add" />
+                            </div>
+                            <div class="col-xs-12 col-md-2">
+                                <input type="button" id="btnForm_updateFactory" class="gj-button-md" value="Update" />
+                            </div>
+                            <div class="col-xs-12 col-md-2" >
+                                <input type="button" id="btnForm_deleteFactory" class="gj-button-md" value="Delete" />
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div id="treeContainer">
+                        <div id="tree"></div>
+                    </div>
+                </form>
             </div>
-            <br />
-
-            <div id="treeContainer">
-                <div id="tree"></div>
-            </div>
-
-        </form>
-
+        </div>
     </div>
 
     <!--Script references. -->

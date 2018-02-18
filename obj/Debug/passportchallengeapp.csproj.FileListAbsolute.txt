@@ -73,3 +73,4 @@ C:\Users\Andre\_Apps\Microsoft\visual_studio\1 - Projects\habrookspassport.azure
 C:\Users\Andre\_Apps\Microsoft\visual_studio\1 - Projects\habrookspassport.azure\passport\bin\Newtonsoft.Json.xml
 C:\Users\Andre\_Apps\Microsoft\visual_studio\1 - Projects\habrookspassport.azure\passport\obj\Debug\passportchallengeapp.dll
 C:\Users\Andre\_Apps\Microsoft\visual_studio\1 - Projects\habrookspassport.azure\passport\obj\Debug\passportchallengeapp.pdb
+C:\Users\Andre\_Apps\Microsoft\visual_studio\1 - Projects\habrookspassport.azure\passport\obj\Debug\passportchallengeapp.csprojResolveAssemblyReference.cache
