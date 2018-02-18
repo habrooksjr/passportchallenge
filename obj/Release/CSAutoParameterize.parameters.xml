@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="FactoryDbConnString-Web.config Connection String" description="FactoryDbConnString Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\MSSQLLocalDB;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\Factory.mdf" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Andre\\_Apps\\Microsoft\\visual_studio\\1\ -\ Projects\\habrookspassport\.azure\\passport\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='FactoryDbConnString']/@connectionString" />
+  </parameter>
+</parameters>
