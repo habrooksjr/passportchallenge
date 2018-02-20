@@ -37,6 +37,7 @@ $("#txtForm_Node_endRange").focus(function () {
 
 function validate(e) {
     var isValid = true;
+    var regEx = new RegExp('');
 
     if (e === undefined || e.target.id === "txtForm_Node_Name") {
         var factoryName = document.getElementById('txtForm_Node_Name');
@@ -48,6 +49,13 @@ function validate(e) {
             if (factoryName.value === "") {
                 factoryNameErrorDisplay.innerHTML = "Name is required.";
             }
+            isValid = false;
+        }
+
+        //regEx = new RegExp("<(.|\n)*?>")
+        regEx = new RegExp("<|>")
+        if (regEx.test(factoryName.value) == true) {
+            factoryNameErrorDisplay.innerHTML = "HTML markup is not allowed. Please remove all less than and greater than signs.";
             isValid = false;
         }
     }

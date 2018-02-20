@@ -19,7 +19,7 @@
                     <div id="controlContainer">
                         <div class="row">
                             <div class="col-8 col-xs-8 col-md-3">
-                                <label for="txtForm_Node_numberOfNodes">
+                                <label for="txtForm_Node_Name">
                                     <span>Factory Name</span>
                                     <input type="text" id="txtForm_Node_Name" required />
                                     <span id="nameErrorDisplay" class="errorDisplay" aria-live="polite"></span>
@@ -83,7 +83,7 @@
     <!--Reference signalr user-defined related scripts.--> 
     <script src="Scripts/hub.js?version=2"></script>
     <!--Reference javascript user-defined default repository.--> 
-    <script src="Scripts/default.js?version=2"></script>
+    <script src="Scripts/default.js?version=9"></script>
 
 </body>
 </html>
